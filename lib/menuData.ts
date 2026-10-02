@@ -1,0 +1,20 @@
+// Menu data ported from referencefile.html
+// `img` overrides picsum seed with a local /Images/ path
+export const MENU = [
+  { id: 'c1', cat: 'chai', veg: 1, spice: 2, tag: 'Bestseller', name: 'Kulhad Masala Chai', hn: 'कुल्हड़ मसाला चाय', price: 30, seed: 'kulhad-masala-chai', img: '/Images/Kulhad Masala Chai.png', desc: 'House masala, do ubaal, mitti ki khushboo. The one that built this tapri.' },
+  { id: 'c2', cat: 'chai', veg: 1, spice: 1, tag: '', name: 'Cutting Chai', hn: 'कटिंग चाय', price: 15, seed: 'cutting-chai-glass', img: '/Images/Cutting Chai.png', desc: 'Half glass, full josh. Marwari style — chhoti quantity, badi taqat.' },
+  { id: 'c3', cat: 'chai', veg: 1, spice: 3, tag: '', name: 'Adrak Chai', hn: 'अदरक चाय', price: 25, seed: 'adrak-chai-ginger', img: '/Images/Adrak Chai.png', desc: 'Ginger pounded on the sil-batta every morning. Gale ke liye amrit.' },
+  { id: 'c4', cat: 'chai', veg: 1, spice: 1, tag: '', name: 'Elaichi Chai', hn: 'इलायची चाय', price: 28, seed: 'elaichi-cardamom-chai', img: '/Images/Elaichi Chai.png', desc: 'Green cardamom crushed fresh. Mehmaano ke liye wali special chai.' },
+  { id: 'c5', cat: 'chai', veg: 1, spice: 2, tag: 'Hot', name: 'Tandoori Chai', hn: 'तंदूरी चाय', price: 45, seed: 'tandoori-chai-smoke', img: '/Images/Tandoori Chai.png', desc: 'Kulhad heated in the tandoor, chai sizzles in. Smoke included, free.' },
+  { id: 'c6', cat: 'chai', veg: 1, spice: 0, tag: '', name: 'Kashmiri Kahwa', hn: 'कश्मीरी क़हवा', price: 60, seed: 'kashmiri-kahwa-saffron', img: '/Images/Kashmiri Kahwa.png', desc: 'Saffron, almonds, green tea, no doodh. Pahadon ka salaam.' },
+  { id: 's1', cat: 'snack', veg: 1, spice: 0, tag: '', name: 'Bun Maska', hn: 'बन मस्का', price: 35, seed: 'bun-maska-butter', img: '/Images/Bun Maska.png', desc: 'Tandoori bun, makhan ka bada sa thappa. Chai mein dubo ke khao.' },
+  { id: 's2', cat: 'snack', veg: 1, spice: 2, tag: 'Bestseller', name: 'Vada Pav', hn: 'वड़ा पाव', price: 25, seed: 'vada-pav-street', img: '/Images/Vada Pav.png', desc: 'Bombay se seedha import. Teekha theka included, feelings free.' },
+  { id: 's3', cat: 'snack', veg: 1, spice: 2, tag: '', name: 'Samosa (2 pc)', hn: 'समोसा', price: 30, seed: 'samosa-crispy-fried', img: '/Images/Samosa.png', desc: 'Kanda-pyaaz filling, karele wale haath se tala hua. Crunch guaranteed.' },
+  { id: 's4', cat: 'snack', veg: 1, spice: 2, tag: 'New', name: 'Maggi Masala', hn: 'मसाला मैगी', price: 50, seed: 'masala-maggi-tapri', img: '/Images/Maggi Masala.png', desc: 'Bhindi-cut veggies, tapri masala tadka. Barish mein toh banta hai.' },
+  { id: 's5', cat: 'snack', veg: 1, spice: 3, tag: '', name: 'Kanda Bhajiya', hn: 'कांदा भजिया', price: 40, seed: 'kanda-bhajiya-onion', img: '/Images/Kanda Bhajiya.png', desc: 'Crispy onion fritters + hari chutney + adrak chai. The holy trinity.' },
+  { id: 's6', cat: 'snack', veg: 0, spice: 0, tag: '', name: 'Egg Bun Maska', hn: 'एग बन मस्का', price: 40, seed: 'egg-bun-maska', img: '/Images/Egg Bun Maska.png', desc: 'Bun maska with a masala fried egg. Sunday subah ka classic.' },
+  { id: 'x1', cat: 'special', veg: 1, spice: 1, tag: 'Hot', name: 'Kulhad Rabri Chai', hn: 'कुल्हड़ रबड़ी चाय', price: 70, seed: 'rabri-chai-dessert', img: '/Images/Kulhad Rabri Chai.png', desc: 'Chai meets rabri. Malai ka taj upar se. Dessert bolne mein sharm nahi.' },
+  { id: 'x2', cat: 'special', veg: 1, spice: 0, tag: 'New', name: 'Paan Chai', hn: 'पान चाय', price: 55, seed: 'paan-chai-betel', img: '/Images/Paan Chai.png', desc: 'Banarasi paan infusion, gulkand touch. Shaadi season ka superstar.' },
+  { id: 'x3', cat: 'special', veg: 1, spice: 0, tag: '', name: 'Chocolate Chai', hn: 'चॉकलेट चाय', price: 60, seed: 'chocolate-chai-cocoa', img: '/Images/Chocolate Chai.png', desc: 'Cocoa stirred into the do-ubaal. Bacchon ki zid, badon ka guilty pleasure.' },
+  { id: 'x4', cat: 'special', veg: 1, spice: 0, tag: 'Bestseller', name: 'Dry Fruit Kahwa', hn: 'ड्राई फ्रूट क़हवा', price: 80, seed: 'dry-fruit-kahwa-nuts', img: '/Images/Dry Fruit Kahwa.png', desc: 'Kesar, kaju, badam, pista — poori tijori ek kulhad mein.' },
+];
