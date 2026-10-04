@@ -579,7 +579,6 @@
             right: 2%;
             width: 118px;
             height: 118px;
-            animation: spin 20s linear infinite
         }
 
         @keyframes spin {
@@ -1928,7 +1927,8 @@
             border: 1.5px solid var(--ink);
             border-radius: 999px;
             margin-top: 8px;
-            width: max-content
+            width: max-content;
+            overflow: hidden;
         }
 
         .qty button {

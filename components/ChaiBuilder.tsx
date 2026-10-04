@@ -155,17 +155,17 @@ export default function ChaiBuilder() {
               <svg width="200" height="190" viewBox="0 0 260 240" fill="none">
                 <defs>
                   <clipPath id="cupClip">
-                    <path d="M72 80 L188 80 L175 196 Q171 216 130 216 Q89 216 85 196 Z" />
+                    <path d="M72 80 Q130 92 188 80 L175 196 Q171 216 130 216 Q89 216 85 196 Z" />
                   </clipPath>
                 </defs>
-                <path d="M68 76 L192 76 L177 198 Q173 220 130 220 Q87 220 83 198 Z" fill="#b1502a" />
+                <path d="M68 76 Q130 89 192 76 L177 198 Q173 220 130 220 Q87 220 83 198 Z" fill="#b1502a" />
                 <g clipPath="url(#cupClip)">
                   <rect id="liq" x="70" y={liqY} width="120" height={liqH} fill={liqCol} />
                   <ellipse id="surf" cx="130" cy={liqY + 2} rx="56" ry="9" fill={surfCol} />
                 </g>
                 <ellipse cx="130" cy="76" rx="62" ry="13" fill="#8f3f1e" />
                 <ellipse cx="130" cy="75" rx="54" ry="10" fill="#3c1e0c" />
-                <path d="M84 160 L176 160" stroke="#7d3416" strokeWidth="3" opacity=".5" />
+                <path d="M84 160 Q130 173 176 160" stroke="#7d3416" strokeWidth="3" opacity=".5" />
               </svg>
             </div>
 

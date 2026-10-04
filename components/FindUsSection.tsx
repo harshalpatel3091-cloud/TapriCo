@@ -1,5 +1,40 @@
 "use client";
+import { useState, useEffect, useRef } from "react";
+
 export default function FindUsSection() {
+  const [stamps, setStamps] = useState<boolean[]>(Array(10).fill(false));
+  const isDone = stamps.every(Boolean);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (cardRef.current) {
+      if (isDone) {
+        cardRef.current.classList.add("done");
+      } else {
+        cardRef.current.classList.remove("done");
+      }
+    }
+  }, [isDone]);
+
+  function toggleStamp(i: number) {
+    setStamps((prev) => {
+      const next = [...prev];
+      next[i] = !next[i];
+      if (next.every(Boolean) && !prev.every(Boolean)) {
+        window.dispatchEvent(new CustomEvent("toast", { detail: "FREE CHAI UNLOCKED — agla kulhad hamari taraf se!" }));
+      }
+      return next;
+    });
+  }
+
+  const stampSVG = (
+    <svg viewBox="0 0 40 40">
+      <path d="M8 12h24l-3.4 18a4 4 0 0 1-4 3.2H15.4a4 4 0 0 1-4-3.2L8 12Z" fill="#c05a2e" />
+      <ellipse cx="20" cy="12" rx="12" ry="3.2" fill="#e0a23f" />
+      <path d="M15 5c-1 1.6 1 2 0 3.6M23 4c-1 1.6 1 2 0 3.6" stroke="#99441f" strokeWidth="2" strokeLinecap="round" fill="none" />
+    </svg>
+  );
+
   return (
     <>
       
@@ -16,10 +51,21 @@ export default function FindUsSection() {
       </div>
       <div className="find-grid">
         <div>
-          <div className="pass-card" data-reveal id="passCard">
+          <div className="pass-card" data-reveal id="passCard" ref={cardRef}>
             <h3>Chai Pass <span className="hn">चाय पास</span></h3>
             <p style={{"fontSize":"13.5px"}}>Har kulhad pe ek thappa. Card bhar gaya toh agla wala hamari taraf se.</p>
-            <div className="stamps" id="stamps"></div>
+            <div className="stamps" id="stamps">
+              {stamps.map((isStamped, i) => (
+                <button
+                  key={i}
+                  className={`stamp-slot ${isStamped ? 'stamped' : ''}`}
+                  aria-label={`Stamp ${i + 1}`}
+                  onClick={() => toggleStamp(i)}
+                >
+                  {stampSVG}
+                </button>
+              ))}
+            </div>
             <p className="pass-note">10 kulhad = 1 FREE · Hamesha, bina shart.</p>
             <p className="free">🎉 BAS HO GAYA — FREE CHAI UNLOCKED!</p>
           </div>
